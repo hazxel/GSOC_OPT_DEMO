@@ -11,7 +11,6 @@ class Optimizor {
 public:
     Optimizor(int);
     ~Optimizor();
-    void test();
     void set_loss_func(pFunc);
     void add_restraints(pFunc);
     double optimize(vector<double>&);
