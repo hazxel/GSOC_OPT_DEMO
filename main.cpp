@@ -6,7 +6,18 @@
 using std::cout;
 using std::endl;
 
+double func(const vector<double>&);
+
 int main(int argc, char* argv[]) {
-    printf("%d...\n", test());
-    cout << "done." << endl;
+    Optimizor optimizor(3);
+    optimizor.set_loss_func(func);
+    optimizor.test();
+}
+
+double func(const vector<double> &input) {
+    double sum = 0;
+    for (auto num = input.begin(); num != input.end(); ++num) {
+        sum += *num;
+    }
+    return sum;
 }

@@ -15,7 +15,8 @@ all:$(TARGET)
 	@echo " Targets: " $(TARGET)
 	@echo ""
 	@echo " **************************************************************"
-	@echo " * *"
+	@echo " * this is a demo of Optimization Module for MBDyn project    *"
+	@echo " * run ./main to test the demo                                *"
 	@echo " **************************************************************"
 	@echo ""
 
