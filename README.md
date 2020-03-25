@@ -1,6 +1,8 @@
 # GSOC_OPT_DEMO
 This is a simple demo for the Embedded Optimization module of MBDyn Project of GSOC.
+
 Variable can be a vector, and it support more than one restraints. 
+
 #### In this demo:                                            
 
 - loss function:
