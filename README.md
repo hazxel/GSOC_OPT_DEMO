@@ -50,7 +50,8 @@ $$
 thus the problem is converted to:
 
 $$
-\min_x f(x) = \min_x \max_\lambda L(x,\lambda)
+\min_x f(x) = \min_x \max_\lambda L(x,\lambda)\\
+s.t. \space \lambda \geq 0
 $$
 
 then use gradient descent to perform minimize & maximize operation.
