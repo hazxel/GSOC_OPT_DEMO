@@ -25,7 +25,7 @@ double Optimizor::optimize(vector<double> &vec) {
     for (int i = 0; i < this -> _max_iter; ++i) {
         this->_max_loss(vec, lambda);
         this->_min_loss(vec, lambda);
-        std::cout<< vec[0] << " " << lambda[0] << std::endl;
+        //std::cout<< vec[0] << " " << lambda[0] << std::endl;
     }
     return this->_calc_loss(vec, lambda);
 }
@@ -98,8 +98,4 @@ void Optimizor::_calc_lambda_grad(const vector<double> &vec, const vector<double
 }
 
 void Optimizor::test() {
-    vector<double> t;
-    t.push_back(2.5);
-    std::cout << this->_loss_func(t) << std::endl;
-    std::cout<< this->optimize(t) << std::endl;
 }
