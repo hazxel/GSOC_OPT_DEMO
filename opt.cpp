@@ -96,6 +96,3 @@ void Optimizor::_calc_lambda_grad(const vector<double> &vec, const vector<double
         grad[i] = (right_loss - left_loss) / 0.0002;
     }
 }
-
-void Optimizor::test() {
-}
