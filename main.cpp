@@ -11,6 +11,7 @@ double func(const vector<double>&);
 int main(int argc, char* argv[]) {
     Optimizor optimizor(3);
     optimizor.set_loss_func(func);
+    optimizor.add_restraints(func);
     optimizor.test();
 }
 
